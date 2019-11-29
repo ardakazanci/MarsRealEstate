@@ -63,10 +63,10 @@ interface MarsApiService {
  * MarsApiService'i uygulayan tek bir Retrofit nesnesi elde edilir.
  */
 object MarsApi {
+
     val retrofitService: MarsApiService by lazy {
         retrofit.create(MarsApiService::class.java)
     }
-
 
 }
 
