@@ -26,6 +26,7 @@
         <variable
             name="viewModel"
             type="com.example.android.marsrealestate.overview.OverviewViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,6 +35,7 @@
         tools:context="com.example.android.marsrealestate.MainActivity">
 
         <androidx.recyclerview.widget.RecyclerView
+            app:listData="@{viewModel.properties}"
             android:id="@+id/photos_grid"
             android:layout_width="0dp"
             android:layout_height="0dp"
